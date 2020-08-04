@@ -1,0 +1,119 @@
+html, body, #root, .App {
+  height: 100%;
+}
+
+.chat-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.person-chat-container {
+  width: 20rem;
+  display: flex;
+  justify-content: flex-end;
+  height: 30rem;
+  align-items: flex-start;
+  flex-direction: column;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 1px 1px 11px -4px rgba(0, 0, 0, 0.75);
+}
+
+.input-container {
+  height: 4rem;
+  width: 100%;
+  border-top: solid 1px #9194a178;
+  display: flex;
+}
+
+.input-container input[type="text"] {
+  width: 80%;
+  font-size: 1rem;
+  font-family: sans-serif;
+  padding-left: 2rem;
+  border: none;
+}
+
+.input-container button {
+  width: 20%;
+  background: none;
+  border: none;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+button:focus {
+  outline: none;
+}
+
+.input-container button svg {
+  color: hsla(230, 84%, 63%, 1);
+  font-size: 1.5rem;
+}
+
+input[type="text"]:focus {
+  outline: initial;
+}
+
+.message-text {
+  display: flex;
+  margin-left: 1rem;
+  padding: .5rem  4rem .5rem 1rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(356deg, hsla(230,84%,53%,1) 0%, rgba(47,47,232,0.9346113445378151) 5%, rgba(0,212,255,1) 100%);
+  color: white;
+  font-family: sans-serif;
+  border-radius: 8px;
+  max-width: 13rem;
+  position: relative;
+  align-items: center;
+}
+
+.message-text p {
+  margin: 0;
+  font-size: 1rem;
+  max-width: 11rem;
+}
+
+.message-text button {
+  position: relative;
+  left: 3rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.message-text p {
+  margin: 0;
+  font-size: 1rem;
+  max-width: 11rem;
+}
+
+.message-text button {
+  position: relative;
+  left: 3rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.header-chat {
+  position: absolute;
+  top: 0;
+  display: flex;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  padding: 1.5rem 0;
+  background: linear-gradient(356deg, hsla(230,84%,53%,1) 0%, rgba(47,47,232,0.9346113445378151) 5%, rgba(0,212,255,1) 100%);
+}
+
+.header-chat h2 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: white;
+}
