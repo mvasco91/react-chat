@@ -1,6 +1,7 @@
 import React from 'react';
 
-import { AiOutlineSend, AiOutlineDelete } from "react-icons/ai";
+import { AiOutlineSend } from "react-icons/ai";
+import Message from './Message';
 
 export default class PersonCHat extends React.Component {
 
@@ -37,16 +38,8 @@ export default class PersonCHat extends React.Component {
                     <h2>Ventana de chat</h2>
                 </div>
                         {this.state.mensajes.map((mensaje, index) => (
-                            
-                            <div className="message-text"
-                                key={index}
-                            ><p>
-                                {mensaje}
-                            </p>
-                            <button
-                            onClick={()=> this.handleDelete(index)}
-                            ><AiOutlineDelete/></button>
-                            </div>
+                            <Message key={index} mensaje={mensaje} funcion={()=> this.handleDelete(index)} />
+
                         ))}
                 <div className="input-container">
                     <input
